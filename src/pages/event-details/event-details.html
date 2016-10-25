@@ -1,0 +1,31 @@
+<ion-header>
+
+	<ion-navbar>
+		<ion-title>Details</ion-title>
+	</ion-navbar>
+
+</ion-header>
+<ion-content class="event_Details">
+	<img class="header_blur" [src]="event.image_url">
+	<ion-grid no-padding class="grid_header">
+		<ion-row>
+			<ion-col class="date_left" width-50 text-center>FROM
+				<p class="notes">{{event.event_start_date | date}}</p>
+			</ion-col>
+			<ion-col class="date_right" width-50 text-center>TO
+				<p class="notes">{{event.event_end_date | date}}</p>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+
+	<div class="event_Details" padding>
+		<h1 class="header_text">{{event.name | uppercase}}</h1>
+
+		<p>{{event.post_content}}</p>
+
+	</div>
+
+
+
+
+</ion-content>

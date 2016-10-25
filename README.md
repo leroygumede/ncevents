@@ -1,2 +1,0 @@
-# ncevents
-Event list app
