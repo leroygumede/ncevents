@@ -15,11 +15,11 @@ App made to display events
 
 TODO:
 - [x] Work on documentation
-- [ ] Consider using github as a repo
+- [x] Consider using github as a repo
 - [ ] Add Share option too app
 - [ ] Create a sprint for each app
-- [ ] BitBucket can contain the wordpress + deployment code
-- [ ] Github can contain the baritone code for it too function
+- [x] BitBucket can contain the wordpress + deployment code
+- [x] Github can contain the baritone code for it too function
 
 
 ##Preview
