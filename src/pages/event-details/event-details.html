@@ -5,25 +5,21 @@
 	</ion-navbar>
 
 </ion-header>
-<ion-content class="event_Details">
-	<img class="header_blur" [src]="event.image_url">
-	<ion-grid no-padding class="grid_header">
-		<ion-row>
-			<ion-col class="date_left" width-50 text-center>FROM
-				<p class="notes">{{event.event_start_date | date}}</p>
-			</ion-col>
-			<ion-col class="date_right" width-50 text-center>TO
-				<p class="notes">{{event.event_end_date | date}}</p>
-			</ion-col>
-		</ion-row>
-	</ion-grid>
+<ion-content class="event_Details" [ngStyle]="{'background':'linear-gradient( rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(' + event.image_url + ')'}">
 
-	<div class="event_Details" padding>
-		<h1 class="header_text">{{event.name | uppercase}}</h1>
+	<!------- - - 
+	<img class="header_blur" class="thumbnail" [src]="event.image_url">
+	-->
+	<h1 class="header_text" text-center>{{event.name | uppercase}}</h1>
 
-		<p>{{event.post_content}}</p>
 
+	<div padding>
+		<button ion-button small outline (click)="viewEvent(event.image_url)">View full image</button>
+		<p class="event_notes"> {{event.event_start_date | date}} | {{event.event_end_date | date}}</p>
+		<p class="event_Details" padding>{{event.post_content}}</p>
 	</div>
+
+
 
 
 

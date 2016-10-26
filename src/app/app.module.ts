@@ -7,6 +7,8 @@ import { HomePage } from '../pages/home/home';
 import { EventDetails } from '../pages/event-details/event-details';
 import { TabsPage } from '../pages/tabs/tabs';
 
+import { Fullscreenimage } from '../pages/modals/fullscreenimage/fullscreenimage';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -14,10 +16,13 @@ import { TabsPage } from '../pages/tabs/tabs';
     ContactPage,
     HomePage,
     TabsPage,
-    EventDetails
+    EventDetails,
+    Fullscreenimage
   ],
   imports: [
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp, {
+      tabsHideOnSubPages: true
+    })
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -26,7 +31,8 @@ import { TabsPage } from '../pages/tabs/tabs';
     ContactPage,
     HomePage,
     TabsPage,
-    EventDetails
+    EventDetails,
+    Fullscreenimage
   ],
   providers: []
 })

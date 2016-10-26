@@ -1,26 +1,85 @@
-page-event-details {
-    .event_Details {}
-    .header_text {
-        font-size: 40px;
-        color: #6c6c6c;
-    }
-    .grid_header {
-        margin-top: -5px;
-    }
-    .date_left {
-        color: #ffffff;
-        background-color: #5ac2fa;
-        height: 100px;
-        font-size: 50px;
-    }
-    .date_right {
-        color: #ffffff;
-        background-color: #fd86e3;
-        height: 100px;
-        font-size: 50px;
-    }
-    .notes {
-        font-size: 20px;
-        margin-top: 0px;
-    }
-}
+     page-event-details {
+         .event_Details {
+             color: #6c6c6c;
+             font-size: 20px;
+         }
+         .header_text {
+             font-size: 40px;
+             color: #6c6c6c;
+             position: abosolute;
+         }
+         .grid_header {
+             margin-top: -5px;
+         }
+         .date_left {
+             color: #ffffff;
+             background-color: #5ac2fa;
+             height: 100px;
+             font-size: 50px;
+         }
+         .date_right {
+             color: #ffffff;
+             background-color: #fd86e3;
+             height: 100px;
+             font-size: 50px;
+         }
+         .notes {
+             font-size: 20px;
+             margin-top: 0px;
+         }
+         .event_notes {
+             font-size: 20px;
+             color: #6c6c6c;
+         }
+         /* ---------------*/
+         .thumbnail1 {
+             height: 100%;
+             background-repeat: no-repeat !important;
+             background-color: white !important;
+             color: white !important;
+             position: absolute;
+         }
+         .thumbnail {
+             width: 100%;
+             height: 100%;
+             opacity: .5;
+             background-repeat: no-repeat;
+             background-size: cover;
+             -webkit-filter: blur(3px);
+             filter: blur(3px);
+         }
+         .wp-caption {
+             position: relative;
+             padding: 0;
+             margin: 0;
+         }
+         .wp-caption img {
+             display: block;
+             max-width: 100%;
+             height: auto;
+         }
+         .wp-caption:after {
+             content: "";
+             position: absolute;
+             display: block;
+             left: 0;
+             top: 0;
+             width: 100%;
+             height: 100%;
+             background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.6) 100%) repeat 0 0;
+             z-index: 1;
+         }
+         .wp-caption-text {
+             display: block;
+             position: absolute;
+             width: 100%;
+             color: #fff;
+             left: 0;
+             top: 0;
+             padding: 1em;
+             font-weight: 700;
+             z-index: 2;
+             -webkit-box-sizing: border-box;
+             box-sizing: border-box;
+         }
+     }
