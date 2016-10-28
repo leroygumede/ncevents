@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { NavController, NavParams, LoadingController } from 'ionic-angular';
+import { NavController, NavParams, LoadingController, AlertController } from 'ionic-angular';
 
 import { Wordpressapi } from '../../providers/wordpressapi/';
 
@@ -16,7 +16,7 @@ export class HomePage {
   public events: any = [];
   loader: any;
 
-  constructor(public navCtrl: NavController, private navParam: NavParams, private wordpress: Wordpressapi, public loadingCtrl: LoadingController) {
+  constructor(public alertCtrl: AlertController, public navCtrl: NavController, private navParam: NavParams, private wordpress: Wordpressapi, public loadingCtrl: LoadingController) {
     this.loader = this.loadingCtrl.create({
       content: "Please wait...",
       duration: 90000
@@ -39,8 +39,10 @@ export class HomePage {
     });
   }
 
-  getDetailsPage(event) {
-    this.navCtrl.push(EventDetails, { 'data': event });
+  getDetailsPage(eventclicked) {
+    //console.log('clicked me');
+    //console.log(eventclicked);
+    this.navCtrl.push(EventDetails, { 'data': eventclicked });
   }
 
 

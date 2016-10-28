@@ -5,23 +5,14 @@
 	</ion-navbar>
 
 </ion-header>
-<ion-content class="event_Details" [ngStyle]="{'background':'linear-gradient( rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(' + event.image_url + ')'}">
-
-	<!------- - - 
-	<img class="header_blur" class="thumbnail" [src]="event.image_url">
-	-->
-	<h1 class="header_text" text-center>{{event.name | uppercase}}</h1>
+<ion-content class="event_Details" [ngStyle]="{'background':'linear-gradient( rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(' + selectedEvent.image_url + ')'}"
+	padding>
 
 
-	<div padding>
-		<button ion-button small outline (click)="viewEvent(event.image_url)">View full image</button>
-		<p class="event_notes"> {{event.event_start_date | date}} | {{event.event_end_date | date}}</p>
-		<p class="event_Details" padding>{{event.post_content}}</p>
-	</div>
+	<h1 class="header_text" text-center>{{selectedEvent.name | uppercase}}</h1>
+	<button ion-button small outline (click)="viewEvent(selectedEvent.image_url)">View full image</button>
 
-
-
-
-
+	<p class="event_notes"> {{selectedEvent.event_start_date}} | {{selectedEvent.event_end_date }}</p>
+	<p class="event_Details" padding>{{selectedEvent.post_content}}</p>
 
 </ion-content>

@@ -1,4 +1,4 @@
-import { Component, } from '@angular/core';
+import { Component } from '@angular/core';
 import { NavController, NavParams, ModalController } from 'ionic-angular';
 
 import { Fullscreenimage } from '../modals/fullscreenimage/fullscreenimage';
@@ -9,13 +9,12 @@ import { Fullscreenimage } from '../modals/fullscreenimage/fullscreenimage';
 })
 export class EventDetails {
 
-  public event: any = [];
+  public selectedEvent;
 
-  constructor(public navCtrl: NavController, private navParam: NavParams, public modalCtrl: ModalController) { }
+  constructor(public navCtrl: NavController, public navParam: NavParams, public modalCtrl: ModalController) { }
 
   ionViewDidLoad() {
-    this.event = this.navParam.get('data');
-    console.log(this.event);
+    this.selectedEvent = this.navParam.get('data');
   }
 
 
