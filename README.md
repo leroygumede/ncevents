@@ -18,6 +18,7 @@ TODO:
 - [x] Consider using github as a repo
 - [ ] Add Share option too app
 - [ ] Create a sprint for each app
+- [ ] Create screen shots for both 7-inch or 10-inch tablet screens for play store
 - [x] BitBucket can contain the wordpress + deployment code
 - [x] Github can contain the baritone code for it too function
 
