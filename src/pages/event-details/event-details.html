@@ -10,10 +10,14 @@
 
 
 	<h1 class="header_text" text-center>{{selectedEvent.name | uppercase}}</h1>
-	<button ion-button small outline (click)="viewEvent(selectedEvent.image_url)">View full image</button>
+
+	<button ion-button small outline (click)="viewEvent(selectedEvent.image_url)"> View full image</button>
+	<button ion-button small outline (click)="openMapsApp(selectedEvent.location)"> View location</button>
+	<button ion-button small outline (click)="shareEvent(selectedEvent)"> Share</button>
 
 	<p class="event_notes"> {{selectedEvent.event_start_date}} | {{selectedEvent.event_start_time }}</p>
 	<p class="event_notes"> {{selectedEvent.event_end_date}} | {{selectedEvent.event_end_time }}</p>
 	<p class="event_Details" padding>{{selectedEvent.post_content}}</p>
+	<p class="event_Details" *ngIf="selectedEvent.location.address"> Location: {{selectedEvent.location.address}}</p>
 
 </ion-content>

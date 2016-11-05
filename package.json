@@ -39,11 +39,12 @@
     "cordova-plugin-whitelist",
     "cordova-plugin-splashscreen",
     "cordova-plugin-statusbar",
+    "cordova-plugin-inappbrowser",
+    "cordova-plugin-x-socialsharing",
     "ionic-plugin-keyboard"
   ],
   "cordovaPlatforms": [
-    "ios",
-    {
+    "ios", {
       "platform": "ios",
       "version": "",
       "locator": "ios"

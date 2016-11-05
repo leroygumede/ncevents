@@ -21113,6 +21113,11 @@ page-event-details {
 page-event-details .toolbar-background {
   background-color: transparent !important;
   border-style: none !important;
+  border-style: none !important;
+}
+
+page-event-details .header-md::after {
+  background-image: none !important;
 }
 
 page-event-details .event_Details {
@@ -21207,6 +21212,10 @@ page-event-details .wp-caption-text {
   font-weight: 700;
   z-index: 2;
   box-sizing: border-box;
+}
+
+page-home .item ion-thumbnail img {
+  max-height: none;
 }
 
 #fullscreenimage .fullscreen-image {

@@ -2,6 +2,10 @@ page-event-details {
     .toolbar-background {
         background-color: transparent!important;
         border-style: none!important;
+        border-style: none!important;
+    }
+    .header-md::after {
+        background-image: none!important;
     }
     .event_Details {
         color: #6c6c6c;
