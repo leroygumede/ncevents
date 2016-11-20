@@ -13,15 +13,6 @@
 
 App made to display events
 
-TODO:
-- [x] Work on documentation
-- [x] Consider using github as a repo
-- [ ] Add Share option too app
-- [ ] Create a sprint for each app
-- [x] BitBucket can contain the wordpress + deployment code
-- [x] Github can contain the baritone code for it too function
-
-
 ##Preview
 <img src="/resources/screenshots/events.png" width="200">
 <img src="/resources/screenshots/details.png" width="200">
